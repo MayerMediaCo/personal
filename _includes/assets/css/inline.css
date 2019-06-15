@@ -105,18 +105,25 @@ nav {
   background-color: var(--grey);
   overflow-x: hidden;
   padding-top: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--white);
 }
 
 nav li a[href]:not(:hover) {
   text-decoration: none;
   color: var(--white);
   padding: 6px 8px 6px 16px;
-  font-size: 25px;
+}
+
+nav li:hover {
+  background-color: var(--white);
+  color: var(--grey);
+  padding: 6px 8px 6px 16px;
 }
 
 nav li a[data-current="current item"] {
-  font-weight: 700;
-  border-bottom: 2px solid var(--grey);
+  font-weight: 800;
   display: block;
 }
 
