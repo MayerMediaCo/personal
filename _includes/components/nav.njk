@@ -1,8 +1,9 @@
 <nav class="navbar">
-  <span class="navbar-toggle" id="js-navbar-toggle">
-    <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>navigation-menu</title><line class="a" x1="2.25" y1="18.003" x2="21.75" y2="18.003"/><line class="a" x1="2.25" y1="12.003" x2="21.75" y2="12.003"/><line class="a" x1="2.25" y1="6.003" x2="21.75" y2="6.003"/></svg>
-  </span>
+  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>navigation-menu</title><line class="a" x1="2.25" y1="18.003" x2="21.75" y2="18.003"/><line class="a" x1="2.25" y1="12.003" x2="21.75" y2="12.003"/><line class="a" x1="2.25" y1="6.003" x2="21.75" y2="6.003"/></svg>
+  </label>
   <a href="#" class="logo">Logo</a>
+  <input type="checkbox" id="chkToggle"></input>
   <ul class="main-nav" id="js-menu">
   {%- for nav in collections.nav | sort(attribute="date") -%}
     <li>
