@@ -4,7 +4,9 @@
 :root {
   /* Site Colors */
   --turkey: #e2fcff;
+  --dark-turkey: #c9e3e6;
   --white: #fafeff;
+  --dark-white: #e1e5e6;
   --lighter-blue: #72b1e6;
   --light-blue: #5998cd;
   --blue: #3f7eb3;
@@ -61,7 +63,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--turkey);
+  background-color: var(--dark-turkey);
 }
 
 main {
@@ -76,7 +78,6 @@ code {
 
 a[href],
 a[href]:visited {
-  color: var(--blue);
   text-decoration: none;
 }
 
@@ -142,6 +143,9 @@ p {
 }
 
 /* Nav */
+nav {
+  color: var(--white);
+}
 .navbar {
   font-size: 18px;
   background-image: var(--gradient);
@@ -176,7 +180,7 @@ p {
   top: 10px;
   right: 20px;
   cursor: pointer;
-  color: var(--turkey);
+  color: var(--dark-turkey);
   font-size: 24px;
 }
 
@@ -188,17 +192,35 @@ p {
   display: block;
 }
 
-/* Posts List */
-article {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #eee;
-  border-bottom: 1px solid var(--white);
+/* Blog Post Cards */
+.card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+  grid-auto-rows: 1fr;
 }
 
-main > section > article > * {
-  margin-top: 0;
-  margin-bottom: 0.5em;
+.card {
+  background-color: var(--turkey);
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.card-body {
+  padding: 16px;
 }
 
 /* Post Tags */
@@ -212,18 +234,18 @@ a[rel="tag"]:visited {
   padding: 0 0.5em;
   line-height: 2em;
   height: 2em;
-  border: 1px solid var(--white);
-  background-color: var(--white);
-  color: var(--blue);
+  border: 1px solid var(--dark-blue);
+  background-color: var(--dark-white);
+  color: var(--dark-blue);
   border-radius: 0.25em;
   text-decoration: none;
   margin: 0 0.5em 0.5em 0;
 }
 
 a[rel="tag"]:hover {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
-  color: var(--white);
+  border: 1px solid var(--dark-blue);
+  background-color: var(--dark-blue);
+  color: var(--dark-white);
 }
 
 a[rel="tag"]:last-child {
