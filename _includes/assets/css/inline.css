@@ -203,6 +203,8 @@ nav {
 
 .card {
   background-color: var(--turkey);
+  box-shadow: -4px 15px 15px -6px rgba(58, 76, 80, 0.6);
+  margin-top: 20px;
 }
 
 .card-title {
