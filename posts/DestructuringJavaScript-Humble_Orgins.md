@@ -8,7 +8,7 @@ tags:
   - javascript
   - web development
 ---
-# Destructuring JavaScript - Humble Orgins
+
 JavaScript is a high-level, interpretative programming language that powers many modern web applications.  JavaScript is seated next to CSS and HTML as core technologies fueling the World Wide Web, bringing interactivity to styles and markups.
 
 But the web did not always have JavaScript.
