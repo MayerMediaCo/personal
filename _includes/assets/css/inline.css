@@ -67,13 +67,7 @@ body {
 }
 
 main {
-  max-width: 37.5em;
-}
-
-p,
-pre,
-code {
-  line-height: 1.5;
+  max-width: 960px;
 }
 
 a[href],
@@ -88,6 +82,12 @@ a[href]:not(:hover) {
 main,
 footer {
   padding: 1em;
+}
+
+footer {
+  margin: auto;
+  background-image: var(--gradient);
+  width: 100vw;
 }
 
 main {
@@ -127,19 +127,31 @@ h1 {
   font-size: var(--font-size-8);
   font-family: var(--header-font), system-ui;
   color: var(--black);
+  margin-bottom: 0.75em;
 }
 
 h2 {
   font-size: var(--font-size-6);
   font-family: var(--header-font), system-ui;
   color: var(--dark-grey);
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
 }
 
 p {
   font-size: var(--font-size-4);
   font-family: var(--body-font), system-ui;
   line-height: 2;
-  max-width: 30em;
+  max-width: 37.5em;
+  margin: 24px auto;
+}
+
+p,
+pre,
+code {
+  line-height: 1.5;
+  max-width: 37.5em;
+  margin: 24px auto;
 }
 
 /* Nav */
@@ -190,6 +202,16 @@ nav {
 
 #chkToggle:checked + ul.main-nav {
   display: block;
+}
+
+/* Footer */
+.footer__container {
+  text-align: center;
+}
+
+.footer__social-links {
+  color: var(--dark-white);
+  padding: 24px;
 }
 
 /* Blog Post Cards */
@@ -284,6 +306,8 @@ button {
   color: var(--white);
   cursor: pointer;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
   .navbar {
