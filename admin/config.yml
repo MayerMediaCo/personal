@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: MayerMediaCo/personal
+  name: git-gateway
+  branch: master
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
