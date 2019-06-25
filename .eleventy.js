@@ -44,6 +44,11 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(syntaxHighlight);
+  };
+
 
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
@@ -72,11 +77,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
   );
-
-  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(syntaxHighlight);
-  };
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
