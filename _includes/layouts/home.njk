@@ -4,3 +4,6 @@ section: home
 ---
 
 {{ layoutContent | safe }}
+
+{% set recentposts = collections.posts | reverse limit:2 %}
+{% include "components/recentposts.njk" %}
