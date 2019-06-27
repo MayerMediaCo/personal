@@ -57,6 +57,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // only content in the recent `posts/` directory
+  eleventyConfig.addCollection("recentposts", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/posts\//) !== null;
+    });
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
