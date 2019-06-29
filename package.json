@@ -45,6 +45,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
+    "normalize.css": "^8.0.1",
     "uglify-es": "^3.3.9"
   }
 }

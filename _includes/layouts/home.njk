@@ -5,5 +5,5 @@ section: home
 
 {{ layoutContent | safe }}
 
-{% set recentposts = collections.posts | reverse limit:2 %}
-{% include "components/recentposts.njk" %}
+{% set postslist = collections.posts limit: 4 %}
+{% include "components/postslist.njk" %}
